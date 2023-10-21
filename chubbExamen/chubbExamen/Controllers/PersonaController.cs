@@ -118,5 +118,26 @@ namespace chubbExamen.Controllers
 
             return Ok(alumno);
         }
+
+        [HttpPut("BajaPersona")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> BajaPersona([FromBody] int personaId)
+        {
+            var persona = _personaRepository.DeletePersona(personaId);
+            if (persona == null)
+            {
+                _respuestAPI.StatusCode = HttpStatusCode.BadRequest;
+                _respuestAPI.IsSuccess = false;
+                _respuestAPI.ErrorMessages.Add("Ocurrio un error al dar de baja la persona");
+                return BadRequest(_respuestAPI);
+            }
+
+            _respuestAPI.StatusCode = HttpStatusCode.OK;
+            _respuestAPI.IsSuccess = true;
+            _respuestAPI.Result = persona;
+            return Ok(_respuestAPI);
+        }
     }
 }

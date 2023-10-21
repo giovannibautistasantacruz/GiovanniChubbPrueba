@@ -3400,11 +3400,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Giovanni Bautista\\source\\repos\\chubbExamen\\chubbExamen\\chubbExamen.csproj",
+      "projectUniqueName": "C:\\Repos\\pruebas\\GiovanniChubbPrueba\\chubbExamen\\chubbExamen\\chubbExamen.csproj",
       "projectName": "chubbExamen",
-      "projectPath": "C:\\Users\\Giovanni Bautista\\source\\repos\\chubbExamen\\chubbExamen\\chubbExamen.csproj",
+      "projectPath": "C:\\Repos\\pruebas\\GiovanniChubbPrueba\\chubbExamen\\chubbExamen\\chubbExamen.csproj",
       "packagesPath": "C:\\Users\\Giovanni Bautista\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Giovanni Bautista\\source\\repos\\chubbExamen\\chubbExamen\\obj\\",
+      "outputPath": "C:\\Repos\\pruebas\\GiovanniChubbPrueba\\chubbExamen\\chubbExamen\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

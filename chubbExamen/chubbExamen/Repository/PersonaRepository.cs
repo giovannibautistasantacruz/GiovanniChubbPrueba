@@ -69,16 +69,45 @@ namespace chubbExamen.Repository
 
         }
 
+        public personaDTO DeletePersona(int IdPersona)
+        {
+            try
+            {
+                var person = _bd.tbl_Persona.FirstOrDefault(p => p.IdPersona == IdPersona);
+
+                if (person == null)
+                {
+                    return null;
+                }
+
+
+                _bd.Entry<tbl_Persona>(person).State = EntityState.Detached;
+                person.status = false;
+                var result = _bd.Update(person);
+                if (!Guardar())
+                {
+                    return null;
+                }
+                return _mapper.Map<personaDTO>(result.Entity);
+            }
+            catch (Exception _e)
+            {
+                //Herramienta de loggeo
+                return null;
+            }
+
+        }
+
         public personaDTO GetPersona(int IdPersona)
         {
-            var person = _bd.tbl_Persona.Include(d=>d.Direccion).FirstOrDefault(p => p.IdPersona == IdPersona);
+            var person = _bd.tbl_Persona.Include(d=>d.Direccion).FirstOrDefault(p => p.IdPersona == IdPersona && p.status == true);
 
             return _mapper.Map<personaDTO>(person);
         }
 
         public List<personaDTO> GetPersonas()
         {
-            var person = _bd.tbl_Persona.ToList();
+            var person = _bd.tbl_Persona.Where(p=>p.status == true).ToList();
 
             return _mapper.Map<List<personaDTO>>(person);
         }

@@ -8,5 +8,6 @@ namespace chubbExamen.Repository.IRepository
         personaDTO UpdatePersona(personaDTO updatepersonaDTO);
         personaDTO GetPersona(int IdPersona);
         List<personaDTO> GetPersonas();
+        personaDTO DeletePersona(int IdPersona);
     }
 }

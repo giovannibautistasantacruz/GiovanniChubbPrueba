@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DSAoaSjM7fg/bNhRPMgkSBpgR5mKg+ktH09aM0vJyUQVRKxytcWAFjG2H5JlQgOEDkrxtXHeSYrVm+LOmvwFXQ==",
+  "dgSpecHash": "cdIlZvWXF5pLDAswUwnErT+i5b4LftmOONlCXv5qa5ETmdvfoqEJbOzBxnn9eK+NoMzNl5+zHYqBrOn0mJXNnQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Giovanni Bautista\\source\\repos\\chubbExamen\\chubbExamen\\chubbExamen.csproj",
+  "projectFilePath": "C:\\Repos\\pruebas\\GiovanniChubbPrueba\\chubbExamen\\chubbExamen\\chubbExamen.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Giovanni Bautista\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Giovanni Bautista\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
